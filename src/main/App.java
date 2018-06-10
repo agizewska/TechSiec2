@@ -4,7 +4,6 @@ import connection.ConnectionConfiguration;
 import model.Book;
 import model.BookDao;
 
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class App {
@@ -17,10 +16,7 @@ public class App {
 
         while (true) {
             System.out.printf("\n What would you like to do? \n where \n 1-create a record, 2-read, 3-update, 4-delete, 5-quit \n");
-
             int decision = klawiatura.nextInt();
-
-
             if (decision == 1) {
                 System.out.printf("Set params - title, author, isbn, year \n");
                 String title = klawiatura.next();
@@ -57,7 +53,6 @@ public class App {
             } else {
                 System.out.printf("Bad input - try again");
             }
-
         }
     }
 }
